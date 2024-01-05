@@ -1,0 +1,674 @@
+@import "font.css";
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+  font-style: normal;
+  line-height: normal;
+  color: white;
+  font-family: Montserrat;
+  font-weight: 600;
+}
+
+html,
+body {
+  scroll-behavior: smooth;
+}
+body.active {
+  overflow: hidden;
+}
+a,
+span {
+  display: inline-block;
+}
+
+img {
+  vertical-align: middle;
+}
+
+button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.container {
+  max-width: 1802px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+/* header */
+/* header */
+/* header */
+
+.header {
+  position: relative;
+}
+
+.header_bg {
+  width: 100%;
+}
+
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: linear-gradient(
+    90deg,
+    rgb(11, 11, 11) 35.46%,
+    rgba(11, 11, 11, 0.35) 127.27%,
+    rgba(11, 11, 11, 0) 133.23%
+  );
+  z-index: 9999;
+}
+
+.bg {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    90deg,
+    rgba(11, 11, 11, 0.856) 35.46%,
+    rgba(11, 11, 11, 0.35) 127.27%,
+    rgba(11, 11, 11, 0) 133.23%
+  );
+  display: flex;
+  align-items: center;
+}
+
+.nav_content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav_left {
+  display: flex;
+  align-items: center;
+  gap: 80px;
+}
+
+.nav_logo {
+  padding: 10px;
+}
+
+.list {
+  display: flex;
+  align-items: center;
+  gap: 70px;
+}
+
+.nav_link {
+  font-family: Inter;
+  font-size: 20px;
+}
+
+.nav_link span {
+  background: linear-gradient(
+    189deg,
+    #1da1f2 11.03%,
+    #c93677 79.85%,
+    rgba(255, 255, 255, 0) 79.85%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.nav_right {
+  display: flex;
+  gap: 32px;
+  align-items: center;
+}
+
+.nav_crown {
+  font-family: Inter;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+}
+
+.nav_crown img {
+  margin-right: 5px;
+}
+
+.nav_crown span {
+  background: linear-gradient(
+    120deg,
+    #ffc700 6.18%,
+    rgba(220, 28, 132, 0.94) 38.32%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.nav_inp {
+  border-radius: 100px;
+  border: 2px solid #fff;
+  background: transparent;
+  padding: 10px 100px;
+  outline: none;
+  width: 440px;
+}
+
+.nav_inp::placeholder {
+  color: white;
+  text-align: center;
+  font-family: Inter;
+  font-size: 20px;
+  font-weight: 500;
+}
+.nav_bg {
+  position: fixed;
+  inset: 0;
+  background: rgb(9 20 39/ 89%);
+  z-index: 9;
+  display: none;
+}
+.nav_btn {
+  width: 40px;
+  height: 40px;
+  position: relative;
+  transition: 0.3s;
+  background: transparent;
+  display: none;
+  z-index: 8;
+}
+
+.nav_btn span,
+.nav_btn span::before,
+.nav_btn span::after {
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background: #a235d18a;
+  top: 50%;
+  left: 0;
+  transition: 0.3s;
+}
+.nav_btn span::before,
+.nav_btn span::after {
+  content: "";
+  display: block;
+  transition: 0.5s;
+}
+.nav_btn span::before {
+  top: -8px;
+}
+.nav_btn span::after {
+  top: 8px;
+}
+.nav_btn.active span {
+  background: transparent;
+}
+.nav_btn.active span::before {
+  background: white;
+  transform: rotate(45deg) translate(6px, 5px);
+}
+.nav_btn.active span::after {
+  background: white;
+  transform: rotate(-45deg) translate(6px, -5px);
+}
+.nav_btn.active {
+  z-index: 12;
+}
+.nav_bg {
+  position: fixed;
+  inset: 0;
+  background: rgb(9 20 39/ 89%);
+  z-index: 9;
+  display: none;
+}
+.nav_bg.active {
+  display: block;
+}
+/* bg_style */
+/* bg_style */
+/* bg_style */
+/* bg_style */
+
+.bg_span {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 156.4%;
+}
+
+.bg_title {
+  color: #f4f4f4;
+  font-size: 75px;
+  max-width: 874px;
+  margin: 10px 0 35px;
+}
+
+.bg_block {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.bg_span-content {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.bg_block-span {
+  font-size: 20px;
+  font-weight: 700;
+  border-radius: 5px;
+  border: 2px solid #d9d9d9;
+  padding: 5px 7px;
+  transition: 0.3s;
+  user-select: none;
+}
+
+.bg_block-span:hover {
+  color: #060606;
+  border: 2px solid #bd5d05;
+  background: #bd5d05;
+}
+
+.bg_block-circle {
+  background: #343333;
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+}
+
+.bg_block-episode {
+  font-size: 20px;
+}
+
+.play::before {
+  content: "\f04b";
+  background: linear-gradient(#f22323, #9747ff);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-right: 10px;
+}
+
+.plus::before {
+  content: "\f067";
+  background: linear-gradient(#c73772, #1d58a9);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 25px;
+  margin-right: 10px;
+}
+
+.bg_btn {
+  font-size: 20px;
+  line-height: 156.4%;
+  border-radius: 100px;
+  border: 3px solid transparent;
+  padding: 15px 20px;
+  transition: 0.2s;
+  display: flex;
+  align-items: center;
+}
+
+.bg_btn:hover {
+  border: 3px solid #6704918a;
+}
+
+.bg_btns {
+  display: flex;
+  gap: 28px;
+  align-items: center;
+}
+
+.bg_text {
+  color: #d0d0d0;
+  font-size: 18px;
+  line-height: 156.4%;
+  max-width: 530px;
+  margin: 45px 0 80px;
+}
+
+/* anime */
+/* anime */
+/* anime */
+/* anime */
+/* anime */
+
+.anime {
+  background: url(../img/anime_bg.png) no-repeat center/ cover;
+  padding: 120px 0;
+}
+
+.anime_titles {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.anime_title {
+  font-size: 30px;
+  border-bottom: 2px solid #1da1f2;
+  padding-bottom: 4px;
+}
+
+.anime_link {
+  color: #f3f3f3;
+  font-size: 20px;
+}
+
+.anime_cards {
+  margin-top: 46px;
+  display: flex;
+  justify-content: center;
+  gap: 46px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.anime_card {
+  max-width: 257px;
+  height: 400px;
+  position: relative;
+  overflow: hidden;
+}
+
+.anime_hover {
+  position: absolute;
+  bottom: 0;
+  border-radius: 0px 0px 10px 10px;
+  background: linear-gradient(90deg, #101010 0%, rgba(0, 0, 0, 0.9) 100%);
+  height: 60px;
+  transition: 1s;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 15px 13px;
+  gap: 15px;
+}
+
+.anime_card:hover .anime_hover {
+  height: 55%;
+}
+
+.anime_hover-title {
+  font-size: 23px;
+}
+
+.anime_hover-title span {
+  background: linear-gradient(180deg, #dc781c 0%, #c93677 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-right: 3px;
+}
+
+.mt {
+  margin-top: 100px;
+}
+
+/* section_bg */
+/* section_bg */
+/* section_bg */
+/* section_bg */
+/* section_bg */
+
+.section_bg {
+  background: url(../img/section_bg.png) no-repeat center/cover;
+}
+
+/* trailer */
+/* trailer */
+/* trailer */
+/* trailer */
+/* trailer */
+/* trailer */
+
+.trailer,
+.upcoming {
+  position: relative;
+  padding: 65px 0 106px;
+}
+
+.trailer::before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background-image: linear-gradient(to right, #143562, #dc1c84);
+}
+
+.trailer_content {
+  display: flex;
+  gap: 50px;
+}
+
+.trailer_left {
+  position: relative;
+  height: max-content;
+}
+
+.trailer_video {
+  max-width: 1110px;
+  width: 100%;
+  height: 533px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.video_bg {
+  position: absolute;
+  border-radius: 10px;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0.44) -38.72%,
+    rgba(0, 0, 0, 0.33) 99.69%
+  );
+  inset: 0;
+}
+
+.trailer_description {
+  max-width: 575px;
+}
+
+.trailer_description-title {
+  color: #d9d9d9;
+  font-size: 55px;
+  font-weight: 700;
+}
+
+.trailer_description-span {
+  color: #d9d9d9;
+  font-size: 30px;
+  font-weight: 700;
+  margin: 9px 0 43px;
+}
+
+.trailer_description-text {
+  font-size: 18px;
+  margin-bottom: 70px;
+}
+
+/* upcoming */
+/* upcoming */
+/* upcoming */
+/* upcoming */
+/* upcoming */
+
+.upcoming::before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background-image: linear-gradient(to right, #9747ff, #f22323);
+}
+
+.upcoming::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background-image: linear-gradient(to right, #dc781c, #c93677);
+}
+
+.upcoming_cards {
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  gap: 65px;
+}
+
+.upcoming_card {
+  max-width: 420px;
+  width: 100%;
+}
+
+.upcoming_card-title {
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.upcoming_card-text {
+  font-size: 18px;
+}
+
+.upcoming_card-btns {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  margin: 35px 0;
+  flex-wrap: wrap;
+}
+
+.upcoming_card-btn {
+  font-size: 18px;
+  border-radius: 25px;
+  padding: 10px 15px;
+  border: 2px solid #143562;
+}
+
+/* words */
+/* words */
+/* words */
+/* words */
+/* words */
+/* words */
+
+.words {
+  padding: 50px 0;
+}
+
+.words-titles {
+  display: flex;
+  align-items: center;
+  gap: 17px;
+}
+
+.words-title {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.words-text {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.words-cards {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-top: 50px;
+}
+
+.words-card {
+  font-size: 20px;
+  font-weight: 700;
+  background: linear-gradient(180deg, #cf427b 0%, #154587 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  border-radius: 5px;
+  border: 2px solid #143562;
+  padding: 5px 10px;
+}
+
+/* footer */
+/* footer */
+/* footer */
+/* footer */
+/* footer */
+
+.footer {
+  background: url(../img/footer_bg.png) no-repeat center/ cover;
+  padding: 75px 0 145px;
+}
+
+.instagram::before {
+  content: "\f16d";
+}
+
+.twitter::before {
+  content: "\f099";
+}
+
+.footer_cards {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer_card {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.footer_title {
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 182.9%;
+}
+
+.footer_link {
+  font-size: 20px;
+  line-height: 182.9%;
+}
+
+.footer_card-title {
+  font-size: 25px;
+  line-height: 182.9%;
+}
+
+.footer_card-link {
+  font-size: 20px;
+}
+
+.footer_card-icons {
+  margin-top: 50px;
+  display: flex;
+  gap: 25px;
+}
+
+.instagram {
+  background: linear-gradient(#9747ff, #cf427b, #bd5d05, #f22323);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 30px;
+}
+
+.twitter {
+  color: #1da1f2;
+  font-size: 30px;
+}

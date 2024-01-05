@@ -1,0 +1,446 @@
+@media (max-width: 1500px) {
+  .bg_span {
+    margin-top: 100px;
+  }
+}
+
+@media (max-width: 1400px) {
+  .container {
+    max-width: 1140px;
+  }
+
+  .nav_left {
+    gap: 60px;
+  }
+
+  .nav_inp {
+    padding: 8px 10px;
+    width: 240px;
+  }
+
+  .bg_title {
+    font-size: 60px;
+  }
+
+  .bg_text {
+    margin: 30px 0;
+  }
+
+  .trailer_video {
+    height: auto;
+  }
+}
+
+@media (max-width: 1200px) {
+  .container {
+    max-width: 960px;
+  }
+
+  .header_bg {
+    height: 700px;
+    object-fit: cover;
+  }
+
+  .trailer_description {
+    max-width: 500px;
+  }
+
+  .trailer_description-title {
+    font-size: 50px;
+  }
+  .nav_btn {
+    display: block;
+  }
+  .list {
+    position: fixed;
+    flex-direction: column;
+    justify-content: space-evenly;
+    top: 0;
+    height: 100dvh;
+    width: 50%;
+    right: -100%;
+    background: black;
+    z-index: 11;
+    overflow: auto;
+    transition: 0.5s linear;
+  }
+  .list.active {
+    right: 0;
+  }
+}
+
+@media (max-width: 992px) {
+  .container {
+    max-width: 720px;
+  }
+
+  .bg_title {
+    font-size: 40px;
+  }
+
+  .bg_block-span,
+  .bg_block-episode {
+    font-size: 15px;
+  }
+
+  .trailer_content {
+    position: relative;
+    padding: 0;
+  }
+
+  .trailer_left {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+
+  .trailer_description {
+    position: relative;
+    padding: 20px;
+    max-width: 530px;
+  }
+
+  .trailer_description-text {
+    margin-bottom: 30px;
+  }
+
+  .trailer_video {
+    height: 100%;
+  }
+
+  .video_bg {
+    background: rgba(0, 0, 0, 0.751);
+  }
+
+  .upcoming_card-title {
+    font-size: 35px;
+  }
+
+  .upcoming_card-btns {
+    gap: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 540px;
+  }
+
+  .nav_inp {
+    width: 170px;
+  }
+
+  .nav_inp::placeholder {
+    font-size: 16px;
+  }
+
+  .nav_right {
+    gap: 20px;
+  }
+
+  .trailer_description-title {
+    font-size: 35px;
+  }
+
+  .trailer_description-span {
+    margin: 9px 0 20px;
+    font-size: 23px;
+  }
+
+  .trailer_description-text {
+    font-size: 16px;
+  }
+
+  .upcoming_cards {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .upcoming_card-btns {
+    margin: 20px 0;
+  }
+
+  .words-cards {
+    gap: 15px;
+    margin-top: 40px;
+    justify-content: center;
+  }
+  .list {
+    width: 100%;
+    background:#000000f5;
+  }
+  .nav_bg.active{
+    display: none;
+  }
+}
+
+@media (max-width: 576px) {
+  .container {
+    max-width: 100%;
+  }
+
+  .nav_logo img {
+    width: 60px;
+  }
+
+  .nav_inp {
+    width: 120px;
+  }
+
+  .nav_inp::placeholder {
+    font-size: 14px;
+  }
+
+  .bg_title {
+    font-size: 30px;
+  }
+
+  .bg_span-content {
+    gap: 10px;
+  }
+
+  .bg_block-span,
+  .bg_block-episode {
+    font-size: 13px;
+  }
+
+  .bg_text {
+    font-size: 16px;
+  }
+
+  .bg_btn {
+    font-size: 16px;
+    padding: 10px 15px;
+  }
+
+  .bg_btn-second {
+    font-size: 16px;
+  }
+
+  .anime {
+    padding: 60px 0;
+  }
+
+  .anime_title {
+    font-size: 20px;
+  }
+
+  .anime_link,
+  .upcoming_card-btn,
+  .upcoming_card-text {
+    font-size: 16px;
+  }
+
+  .anime_card img {
+    height: 350px;
+    border-radius: 0px 0px 10px 10px;
+  }
+
+  .anime_hover {
+    padding: 20px 7px;
+  }
+
+  .anime_hover-title {
+    font-size: 20px;
+  }
+
+  .trailer_description-title,
+  .upcoming_card-title {
+    font-size: 30px;
+    text-wrap: balance;
+  }
+
+  .trailer_description-span {
+    font-size: 20px;
+  }
+
+  .trailer_description-text {
+    margin-bottom: 30px;
+  }
+
+  .trailer_video,
+  .video_bg {
+    border-radius: 0;
+  }
+
+  .trailer,
+  .upcoming {
+    padding: 50px 0;
+  }
+
+  .words-titles {
+    gap: 0;
+    justify-content: space-between;
+  }
+
+  .words-title {
+    font-size: 25px;
+  }
+
+  .words-text {
+    width: 70%;
+  }
+
+  .words-card {
+    font-size: 15px;
+  }
+
+  .footer_cards {
+    gap: 35px;
+  }
+
+  .footer_card {
+    width: 40%;
+  }
+
+  .footer_card-title {
+    font-size: 20px;
+  }
+
+  .footer_card-title:first-child {
+    font-size: 25px;
+  }
+
+  .footer_card-icons {
+    margin: 0;
+  }
+}
+
+@media (max-width: 450px) {
+  .nav_crown {
+    display: none;
+  }
+
+  .bg_title {
+    font-size: 25px;
+  }
+
+  .bg_text,
+  .bg_span {
+    font-size: 14px;
+  }
+
+  .words-text {
+    width: 55%;
+  }
+
+  .footer_card {
+    width: 100%;
+  }
+
+  .footer {
+    padding: 50px 0;
+  }
+
+  .footer_title,
+  .footer_card-title:first-child {
+    font-size: 22px;
+  }
+
+  .footer_link,
+  .footer_card-title,
+  .footer_card-link {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 400px) {
+  .nav_logo img {
+    width: 40px;
+  }
+
+  .nav_inp {
+    width: 100px;
+    padding: 0 10px;
+    height: 30px;
+  }
+
+  .nav_inp::placeholder {
+    font-size: 11px;
+  }
+
+  .nav_accound svg {
+    width: 18px;
+    height: 18px;
+  }
+
+  .bg_title {
+    font-size: 20px;
+  }
+
+  .bg_block {
+    flex-direction: column;
+    align-items: start;
+  }
+
+  .bg_text,
+  .bg_span {
+    font-size: 13px;
+  }
+
+  .bg_btns {
+    flex-direction: column;
+    align-items: start;
+  }
+
+  .anime_title {
+    font-size: 16px;
+  }
+
+  .anime_link {
+    font-size: 14px;
+  }
+
+  .anime {
+    padding: 40px 0;
+  }
+
+  .mt {
+    margin-top: 60px;
+  }
+
+  .trailer_description-title,
+  .upcoming_card-title {
+    font-size: 24px;
+  }
+
+  .trailer_description-span {
+    font-size: 16px;
+  }
+
+  .trailer_description-text,
+  .upcoming_card-text {
+    font-size: 13px;
+  }
+
+  .bg_btns {
+    gap: 15px;
+  }
+
+  .trailer_description-text {
+    margin-bottom: 15px;
+  }
+
+  .upcoming_card-btns {
+    flex-direction: column;
+    align-items: stretch;
+    text-align: center;
+  }
+
+  .words-title {
+    font-size: 20px;
+  }
+
+  .words-text {
+    font-size: 12px;
+  }
+
+  .words-cards {
+    gap: 5px;
+    margin-top: 20px;
+  }
+
+  .words-card {
+    font-size: 12px;
+  }
+}
